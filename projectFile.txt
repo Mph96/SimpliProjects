@@ -1,0 +1,5 @@
+Welcome to my file
+This is how we start.
+This will be the middle.
+This is how the story ends.
+This is an appended line.
