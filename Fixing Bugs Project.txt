@@ -1,0 +1,28 @@
+﻿By: Matthew Hernandez
+
+
+Date: 1/9/21
+
+
+The goal of this project was for us to go through a given project, complete it with a search and sort method, and finally correct any bugs that we could find. The sort method was the easier of the two to complete. The collections library in java has an inherent sorting ability which uses the various sorting algorithms that we have gone over during the week with our instructor Bas. The ArrayList is input into the Collections.sort() and all of the elements are organized in sequential order.
+        As for the search method, a boolean variable “foundResult” is created. With the use of a for loop and if/else statements, the “expense” array is checked over to see if it matches whatever input that the user puts in. It is written as follows:
+boolean foundResult = false;
+//Complete the method
+for (int expense : arrayList){
+   // if the value put in by the user matches an element in the array
+   if (expense == value) {
+       foundResult = true;
+       break;
+   }
+}
+if (foundResult){
+   System.out.println(" \n Hooray! I have the expense listed as: " + value + "\n");
+} else {
+   System.out.println(" \n Awww man, I am sorry. I am unable to find the expense listed as: " + value + "\n");
+}
+
+
+        The bugs that I was able to find include: application being unable to close, default array values populate every time it is called throughout the case statements which overrides user input, and an incorrect input will shutdown the application.
+        In the case of an incorrect input, this very well may be the actual intention. However, I like programs that can run continuously until they are explicitly ended by the user so I simply added a call to “optionsSelection” at the end so that it can rerun.
+        To fix case 6, I made a method named “closeApp” which implements “System.exit(0)” to indicate a successful termination of the program
+        Finally, in order to make sure that user additions to the array are not overwritten every time there is a recursion, the ArrayList “expenses” is taken out of the for loop and placed on it’s own in the class. The default values are then placed within the main.
