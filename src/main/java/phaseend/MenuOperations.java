@@ -48,7 +48,7 @@ public class MenuOperations {
             case "2":
                 showFileOperations();
             case "3":
-                System.out.println("Thanks for using my project. Closing application.");
+                System.out.println("Thanks for using LockedMe.com. Closing application.");
                 System.exit(0);
             default:
                 System.out.println("Invalid input provided, please choose 1, 2 or 3");
